@@ -1,10 +1,10 @@
 
 type GreetPops ={
      name:string
-     messageCount:number
+     messageCount?:number
      isLoggedIn:boolean
 }
-export const Greet = ({name,messageCount,isLoggedIn}:GreetPops) => {
+export const Greet = ({name,messageCount = 0,isLoggedIn}:GreetPops) => {
   return (
     <div >
         {
