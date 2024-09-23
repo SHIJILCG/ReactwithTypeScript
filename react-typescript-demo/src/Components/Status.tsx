@@ -18,3 +18,4 @@ export const Status = ({status}:StatusProps) => {
     </div>
   )
 }
+

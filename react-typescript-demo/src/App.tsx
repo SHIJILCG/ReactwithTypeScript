@@ -1,54 +1,72 @@
-
 import './App.css';
-import { Container } from './Components/Container';
-// import { Button } from './Components/Button';
-import { Input } from './Components/Input';
-import { Counter } from './Components/State/Counter';
-import { LoggedIn } from './Components/State/LoggedIn';
-import { User } from './Components/State/User';
-// import { Greet } from './Components/Greet';
-// import { Heading } from './Components/Heading';
-// import { Oscar } from './Components/Oscar';
-// import { Person } from './Components/Person';
-// import { PersonList } from './Components/PersonList';
-// import { Status } from './Components/Status';
- 
+import { Text } from './Components/Polymorphic/Text';
+// import { Button } from './Components/html/Button';
+// import { Input } from './Components/html/Input';
+// import { Counter } from './Components/State/Counter'; 
+// import { ThemcontextProvider } from './Components/Context/ThemeContext';
+// import { Box } from './Components/Context/Box';
+// import { UsercontextProvider } from './Components/Context/UserContext';
+// import { User } from './Components/Context/User';
+// import { MutableRef } from './Components/ref/MutableRef';
+// import Counter from './Components/class/Counter';
+// import { Private } from './Components/auth/Private';
+// import { Profile } from './Components/auth/Profile';
+// import { List } from './Components/generics/List';
+// import RandomNumber from './Components/restriction/RandomNumber';
+// import { Toast } from './Components/Templateliterals/Toast';
 function App() {
-  //  const nameList =[
-  //     {
-  //       first:'Bruce',
-  //       last:'wayne'
-  //     },
-  //     {
-  //       first:'Clark',
-  //       last:'Kent'
-  //     },
-  //     {
-  //       first:'Princess',
-  //       last:'Diana'
-  //     }
-  //  ]
-  // const handleClick =()=>{
-  //    console.log('buttons clicked',)
-  // }
+
   return (
     <div className="App" >
-           {/* <Greet name={'shijil'} messageCount={100} isLoggedIn={true}/> */}
-           {/* <Person nameList={nameList} /> */}
-           {/* <PersonList nameList={nameList} /> */}
-           {/* <Status status='Loading' /> */}
-           {/* <Heading>
-                <Oscar />
-           </Heading>
-           <Greet name='shijil' isLoggedIn={true}/> */}
-           {/* <Button handleClick={(event,id)=> console.log("button is clicked ",event,id)}/> */}
-           {/* <Input value='' handleonChange={event =>  console.log(event)} /> */}
-           {/* <Container  styles={{border:'1px solid black',padding:'1rem'}}/> */}
-           {/* <LoggedIn /> */}
-           {/* <User /> */}
-           <Counter />
+           {/* <Counter /> */}
+           {/* <ThemcontextProvider>
+                   <Box />
+           </ThemcontextProvider> */}
+           {/* <UsercontextProvider> */}
+                  {/* <User /> */}
+           {/* </UsercontextProvider> */}
+           {/* <MutableRef /> */}
+           {/* <Counter message='The Count Value is:'/> */}
+           {/* <Private  isLoggedIn={true} component={Profile}/> */}
+           {/* <List items={[1,'Superman','Wonder Women']} onClick={(item)=> console.log(item)}/> */}
+            {/* <List 
+                items={[
+                     {
+                      id:1,
+                      first:"Bruce",
+                      last:'wayne'
+                     },
+                     {
+                      id:4,
+                       first:'Clark',
+                       last:'Kent'
+                     },
+                     {
+                      id:5,
+                      first:'Princess',
+                      last:'Diana'
+                     }
+                ]}
+                onClick={(item)=>console.log(item)}
+            /> */}
+            {/* <RandomNumber value={10} ispositive /> */}
+             {/* <Toast position='center'/> */}
+             {/* <Button variant='primary' >
+                Label
+             </Button> */}
+             {/* <Input>
+                  <div>Primary button</div>
+             </Input> */}
+             {/* <button>
+                 <div>Primary button</div>
+             </button> */}
+             {/* <Button variant='primary' onClick={()=> console.log('clicked')}>
+                 primary
+             </Button> */}
+            <Text size='sm' as='h1'>Heading</Text>
+            <Text size='md' as='p'>Paragraph</Text>
+            <Text size='sm' as='label' color='secondary' htmlFor='someId'>Label</Text>
     </div>
   );
 }
-
 export default App;
